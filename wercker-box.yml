@@ -8,7 +8,7 @@ packages :
 keywords:
   - nodejs
 script: |
-  export NODEVERSION=0.10.16
+  export NODEVERSION=0.10.21
   sudo apt-get update
   sudo apt-get install wget build-essential
   cd $HOME
