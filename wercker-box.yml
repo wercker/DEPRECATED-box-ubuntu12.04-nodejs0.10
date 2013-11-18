@@ -1,5 +1,5 @@
 name : ubuntu12.04-nodejs0.10
-version : 1.0.0
+version : 1.0.1-dev1
 inherits : wercker/ubuntu12.04-webessentials@0.0.12
 type : main
 platform : ubuntu@12.04
@@ -9,17 +9,15 @@ keywords:
   - nodejs
 script: |
   export NODEVERSION=0.10.22
-  sudo apt-get update
-  sudo apt-get install wget build-essential
-  cd $HOME
-  mkdir nodeinstall
-  cd nodeinstall
-  wget http://nodejs.org/dist/v$NODEVERSION/node-v$NODEVERSION.tar.gz
-  tar xzvf node-v$NODEVERSION.tar.gz
-  cd node-v$NODEVERSION
-  ./configure
-  make
-  sudo make install
-  cd $HOME
-  rm -fr nodeinstall
+  export WORKING_DIR=`mktemp -d`
+  export NODE_DIST=`mktemp`
+  sudo apt-get update -y
+  sudo apt-get install curl build-essential -y
+  curl http://nodejs.org/dist/v$NODEVERSION/node-v$NODEVERSION.tar.gz > $NODE_DIST
+  tar xzvf node-v$NODEVERSION.tar.gz -C $WORKING_DIR
+  $WORKING_DIR/configure
+  $WORKING_DIR/make
+  sudo $WORKING_DIR/make install
+  rm -fr $WORKING_DIR
+  rm -fr $NODE_DIST
   node -v
