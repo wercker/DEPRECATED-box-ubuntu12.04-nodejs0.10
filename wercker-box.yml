@@ -4,7 +4,7 @@ inherits : wercker/ubuntu12.04-webessentials@0.0.12
 type : main
 platform : ubuntu@12.04
 packages :
-  - nodejs@0.10.21
+  - nodejs@0.10.22
 keywords:
   - nodejs
 script: |
@@ -14,7 +14,7 @@ script: |
   sudo apt-get update -y
   sudo apt-get install curl build-essential -y
   curl http://nodejs.org/dist/v$NODEVERSION/node-v$NODEVERSION.tar.gz > $NODE_DIST
-  tar xzvf node-v$NODEVERSION.tar.gz -C $WORKING_DIR
+  tar xzvf $NODE_DIST -C $WORKING_DIR
   $WORKING_DIR/configure
   $WORKING_DIR/make
   sudo $WORKING_DIR/make install
