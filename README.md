@@ -4,14 +4,17 @@ A wercker box containing ubuntu 12.04, with nodejs 0.10.x installed.
 
 # What's new
 
-- Update nodejs to version `0.10.22`
-- Update inheritance to `wercker/ubuntu12.04-webessentials@1.0.0`
+- Update nodejs to version `0.10.23`
 
 # License
 
 The MIT License (MIT)
 
 # Changelog
+
+## 1.0.2
+
+- Update nodejs to version `0.10.23`
 
 ## 1.0.0
 
