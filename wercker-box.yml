@@ -4,11 +4,11 @@ inherits : wercker/ubuntu12.04-webessentials@1.0.0
 type : main
 platform : ubuntu@12.04
 packages :
-  - nodejs@0.10.22
+  - nodejs@0.10.23
 keywords:
   - nodejs
 script: |
-  export NODEVERSION=0.10.22
+  export NODEVERSION=0.10.23
   sudo apt-get update
   sudo apt-get install wget build-essential
   cd $HOME
