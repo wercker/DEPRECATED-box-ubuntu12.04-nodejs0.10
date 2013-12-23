@@ -1,14 +1,14 @@
 name : ubuntu12.04-nodejs0.10
-version : 1.0.2
+version : 1.0.3
 inherits : wercker/ubuntu12.04-webessentials@1.0.0
 type : main
 platform : ubuntu@12.04
 packages :
-  - nodejs@0.10.23
+  - nodejs@0.10.24
 keywords:
   - nodejs
 script: |
-  export NODEVERSION=0.10.23
+  export NODEVERSION=0.10.24
   sudo apt-get update
   sudo apt-get install wget build-essential
   cd $HOME
