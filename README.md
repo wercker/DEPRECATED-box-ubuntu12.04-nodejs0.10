@@ -4,7 +4,7 @@ A wercker box containing ubuntu 12.04, with nodejs 0.10.x installed.
 
 # What's new
 
-- Update Node.js to version `0.10.24`
+- Update Node.js to version `0.10.25`
 
 # License
 
@@ -12,10 +12,14 @@ The MIT License (MIT)
 
 # Changelog
 
+## 1.0.4
+
+- Update Node.js to version `0.10.25`
+
 ## 1.0.3
 
 - Update Node.js to version `0.10.24`
-
+- 
 ## 1.0.2
 
 - Update nodejs to version `0.10.23`
