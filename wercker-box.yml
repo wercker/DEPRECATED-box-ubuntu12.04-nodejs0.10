@@ -1,5 +1,5 @@
 name : ubuntu12.04-nodejs0.10
-version : 1.0.4
+version : 1.0.5
 inherits : wercker/ubuntu12.04-webessentials@1.0.0
 type : main
 platform : ubuntu@12.04
