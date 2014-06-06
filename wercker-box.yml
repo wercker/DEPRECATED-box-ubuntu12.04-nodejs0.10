@@ -15,7 +15,7 @@ script: |
   mkdir nodeinstall
   cd nodeinstall
   wget http://nodejs.org/dist/v$NODEVERSION/node-v$NODEVERSION.tar.gz
-  tar xzvf node-v$NODEVERSION.tar.gz
+  tar xzf node-v$NODEVERSION.tar.gz
   cd node-v$NODEVERSION
   ./configure
   make
