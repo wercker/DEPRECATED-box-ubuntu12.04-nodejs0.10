@@ -5,6 +5,7 @@ A wercker box containing ubuntu 12.04, with Node.js 0.10.x installed.
 # What's new
 
 - Update Node.js to version `0.10.31`
+- Updated base-box for OptiPNG 0.7.5
 
 # License
 
