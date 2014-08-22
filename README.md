@@ -12,6 +12,10 @@ The MIT License (MIT)
 
 # Changelog
 
+## 1.4.0
+
+- Updated base-box for OptiPNG 0.7.5
+
 ## 1.3.0
 
 - Update Node.js to version `0.10.31`
